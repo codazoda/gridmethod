@@ -6,8 +6,8 @@
     $file = $_FILES[0];
     
     // Use the rgb paramater if it was passed as an array
-    if (is_array($params[rgb])) {
-        $rgb = $_REQUEST['rgb']; // array(0, 0, 0);
+    if (is_array($_REQUEST['rgb'])) {
+        $rgb = $_REQUEST['rgb'];
     } else {
         $rgb = array(0, 0, 0);
     }
